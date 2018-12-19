@@ -12,7 +12,7 @@ node {
     
     stage 'bake image'
     docker.withRegistry('https://registry.hub.docker.com','docker-hub-credentials') {
-        def image = docker.build("ravisankar/ravisankardevops:${env.BUILD_TAG}",'.')
+        def image = docker.build("babu2006/babusample:${env.BUILD_TAG}",'.')
         
         stage 'test image'
         image.withRun('-p 8888:8888') {springboot ->
