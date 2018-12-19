@@ -11,7 +11,7 @@ node {
         }
     
     stage 'bake image'
-    docker.withRegistry('https://hub.docker.com/','ayeshabanu') {
+    docker.withRegistry('https://hub.docker.com/','babu2006') {
         def image = docker.build("babu2006/babusample:${env.BUILD_TAG}",'.')
         
         stage 'test image'
