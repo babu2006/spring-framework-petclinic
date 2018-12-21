@@ -474,6 +474,11 @@
             </dependencies>
         </profile>
    </profiles>
-
-    <url>demopetclinic</url>
+   <url>demopetclinic</url>
+    <distributionManagement>
+      <repository>
+       <id>sample</id>
+         <url>http://3.16.180.25:8081/nexus/content/repositories/sample</url>
+      </repository>
+    </distributionManagement>
 </project>
